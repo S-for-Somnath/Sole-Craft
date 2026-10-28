@@ -1,0 +1,193 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #Fff;
+}
+
+@font-face {
+  font-family: "OldEnglish";
+  src: url("fonts/UnifrakturMaguntia.woff2") format("woff2");
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #000000;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 5rem;
+    margin-bottom: 0.2rem;
+    color: silver;
+    font-family: 'Manufacturing Consent', cursive;
+    font-weight: 50 ;
+}
+
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+    font-family: 'Grenze', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+    background-color: #363432;
+}
+
+
+.cart-btn {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-btn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+
+.cart-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+.profile-btn {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-btn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.profile-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 4px;
+    box-sizing: border-box;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: 'Grenze', serif;
+    font-size: 20px;
+}
+
+.search-box input::placeholder {
+    color: white;
+    opacity: 0.9;
+}
+
+.search-btn {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-btn svg {
+    width: 23px;
+    height: 23px;
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.search-btn:hover {
+    background: white;
+}
+
+.search-btn:hover svg {
+    stroke: black;
+}
+
+@media (max-width: 600px) {
+    .search-box {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+
